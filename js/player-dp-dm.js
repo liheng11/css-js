@@ -1386,8 +1386,8 @@
 						value: function() {
 							var e = this,
 								t = void 0;
-							t = this.options.api.maximum ? this.options.api.address + "&url=" + this.options.api.id + "&max=" + this.options
-								.api.maximum : this.options.api.address + "&url=" + this.options.api.id;
+							t = this.options.api.maximum ? this.options.api.address + "&id=" + this.options.api.id + "&url=" + this.options.api.api_vod_url + "&max=" + this.options
+								.api.maximum : this.options.api.address + "&id=" + this.options.api.id + "&url=" + this.options.api.api_vod_url;
 							var n = (this.options.api.addition || []).slice(0);
 							n.push(t), this.events && this.events.trigger("danmaku_load_start", n), this._readAllEndpoints(n,
 								function(t) {
